@@ -12,8 +12,8 @@ BuildRequires:	maven-local
 BuildRequires:	mvn(org.apache.felix:maven-bundle-plugin)
 BuildRequires:	mvn(org.sonatype.oss:oss-parent:pom:)
 
-Requires:	java-headless
-Requires:	jpackage-utils
+#Requires:	java-headless
+#Requires:	javapackages-tools
 
 %description
 Weupnp is a lightweight Java library designed to implement the UPnP protocol
