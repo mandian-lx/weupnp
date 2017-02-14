@@ -1,7 +1,7 @@
 Summary:	A tiny UPnP client library written in Java
 Name:		weupnp
 Version:	0.1.4
-Release:	0
+Release:	1
 License:	LGPLv2.1+
 Group:		Development/Java
 URL:		https://bitletorg.github.io/%{name}/
@@ -40,10 +40,6 @@ API documentation for %{name}.
 # Delete prebuild JARs and classes
 find . -name "*.jar" -delete
 find . -name "*.class" -delete
-
-# Add the META-INF/INDEX.LIST file to the jar archive (fix jar-not-indexed warning)
-%pom_xpath_inject "pom:plugin[pom:artifactId[./text()='maven-jar-plugin']]/pom:configuration/pom:archive" "
-		<index>true</index>"
 
 # Set the right name to fit the packaging guidelines
 %mvn_file :%{name} %{name}-%{version} %{name}
