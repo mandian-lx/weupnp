@@ -1,3 +1,5 @@
+%{?_javapackages_macros:%_javapackages_macros}
+
 Summary:	A tiny UPnP client library written in Java
 Name:		weupnp
 Version:	0.1.4
@@ -11,9 +13,6 @@ BuildArch:	noarch
 BuildRequires:	maven-local
 BuildRequires:	mvn(org.apache.felix:maven-bundle-plugin)
 BuildRequires:	mvn(org.sonatype.oss:oss-parent:pom:)
-
-#Requires:	java-headless
-#Requires:	javapackages-tools
 
 %description
 Weupnp is a lightweight Java library designed to implement the UPnP protocol
